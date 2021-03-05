@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Link Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <title>Abrite ton cheval</title>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/ATC_logo_small.png" class="navbar-brand-img" alt="Logo Abrite ton Cheval">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="index.html#" aria-haspopup="true" aria-expanded="false">
+                Le Projet
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLandings">
+                <div class="row no-gutters">
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-img-left" style="background-image: url(assets/img/horses-barn.jpg);">
+
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold text-white mb-0">
+                        Où en est le projet ?
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-white">
+                        Suivez-nous sur les réseaux sociaux pour suivre l'actualité du projet !
+                      </p>
+
+                      <!-- Button -->
+                      <a href="#" class="btn btn-sm btn-white shadow-dark fonFt-size-sm">
+                        Nous suivre
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-body">
+                      <div class="row no-gutters">
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header" style="color:#9e6654">
+                            Origine
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="#">
+                            Naissance
+                          </a><br />
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header" style="color:#9e6654">
+                            La plateforme
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="#">
+                            Pourquoi ?
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Pour qui ?
+                          </a>
+
+                        </div>
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header" style="color:#9e6654">
+                            L'agence
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="#">
+                            Communiquer
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Apprendre
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            Partager
+                          </a>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" href="#">
+                Qui sommes-nous ?
+              </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="index.html#" aria-haspopup="true" aria-expanded="false">
+                Je veux en savoir plus !
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="#">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <img width="24px" height="24px" viewBox="0 0 24 24" version="1.1" src="assets/img/icons/barn.png" alt="Ecurie" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Gérant d'une structure équestre
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Je souhaite en savoir plus
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="#">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <img width="24px" height="24px" viewBox="0 0 24 24" version="1.1" src="assets/img/icons/horse.png" alt="horse" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Propriétaire d'équidé
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Je souhaite en savoir plus
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="#">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <img width="24px" height="24px" viewBox="0 0 24 24" version="1.1" src="assets/img/icons/fast-time.png" alt="horloge" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Actus
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Où en est le projet ?
+                      </p>
+
+                    </div>
+
+                    <!-- Badge -->
+                    <span class="badge badge-pill badge-primary-soft ml-auto">
+                      0.1
+                    </span>
+
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#newsletter-register" target="_blank">
+            Tenez-moi informé !
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="border-bottom">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-md-6 offset-md-1 order-md-2">
+
+            <!-- Slider (mobile) -->
+            <div class="d-md-none img-cover" data-flickity='{"imagesLoaded": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false}'>
+              <div class="w-100">
+
+                <!-- Image -->
+                <img src="assets/img/horse-play.jpg" alt="Cheval qui joue" class="img-fluid" />
+
+              </div>
+              <div class="w-100">
+
+                <!-- Image -->
+                <img src="assets/img/horses.jpg" alt="Chevaux prés" class="img-fluid">
+
+              </div>
+            </div>
+
+            <!-- Slider -->
+            <div class="position-relative h-100 vw-50 d-none d-md-block" data-aos="fade-left">
+
+              <!-- Slider -->
+              <div class="flickity-button-bottom flickity-button-white h-100 w-100" data-flickity='{"imagesLoaded": true, "setGallerySize": false, "wrapAround": true, "pageDots": false}'>
+                <div class="w-100 h-100 bg-cover" style="background-image: url(assets/img/horse-play.jpg);"></div>
+                <div class="w-100 h-100 bg-cover" style="background-image: url(assets/img/horses.jpg);"></div>
+              </div>
+
+              <!-- Shape -->
+              <div class="shape shape-left shape-fluid-y svg-shim text-white">
+                <svg viewBox="0 0 100 1544" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0H100V386L50 1158V1544H0V0Z" fill="currentColor"/>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-5 py-8 py-md-14 order-md-1" data-aos="fade-right">
+
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-md-left">
+              Bienvenu sur <span class="text-primary">Abrite ton Cheval</span>. <br>
+              Le rendez-vous des propriétaires.
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-6 mb-md-8">
+              Nous mettons en relation les propriétaires (ou futur propriétaires) d'équidés en recherche d'hébergement avec les structures équestres proposant des solutions d'hébergement.
+            </p>
+
+            <!-- Buttons -->
+            <div class="text-center text-md-left">
+              <a href="#" class="btn btn-primary shadow lift mr-1">
+                J'abrite mon cheval<i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a>
+              <a href="#" class="btn btn-primary-soft lift">
+                J'ai de la place
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- FEATURES
+    ================================================== -->
+    <section class="py-8 py-md-11 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4" data-aos="fade-up">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <img width="50px" height="50px" viewBox="0 0 50 50" version="1.1" src="assets/img/icons/barn.png" />
+            </div>
+
+            <!-- Heading -->
+            <h3 class="text-center">
+              Pensé pour les écuries
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0 text-center">
+              Parce qu'il ne s'agit pas "juste" de publier une annonce, nous accompagnons les professionnels dans la durée.</p>
+
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <img width="50px" height="50px" viewBox="0 0 50 50" version="1.1" src="assets/img/icons/horse.png" />
+            </div>
+
+            <!-- Heading -->
+            <h3 class="text-center">
+              Au service des propriétaires
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0 text-center">
+              Parce que chaque équidé à des besoins spécifique, parce qu'il peut parfois être long et laborieux de trouver la solution d'hébergement idéale. Abrite ton cheval est la solution.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Icon -->
+            <div class="icon text-primary mb-3 text-center">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <img width="50px" height="50px" viewBox="0 0 50 50" version="1.1" src="assets/img/icons/tinder.png" />
+            </div>
+
+            <!-- Heading -->
+            <h3 class="text-center">
+              It's a match!
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-0 text-center">
+              Que ce soit pour une nuit ou pour la vie, trouvez l'hébergement qui correspond aux besoins de votre équidé.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-gradient-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+          <div class="col-12 col-md-6 order-md-2" data-aos="fade-left">
+
+            <!-- Heading -->
+            <h2>
+              Une plateforme <br>
+              <span class="text-success">pensée pour <span data-toggle="typed" data-options='{"strings": ["les chevaux.", "les propriétaires.", "les écuries.", "les centres équestres.", "les particuliers."]}'></span></span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <!-- List -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    Comparaison et pré-selction
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p class="text-success mb-lg-0">
+                    Sécurité et facilté
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6 mb-6 mb-md-0">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    Messagerie instantanée
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success mb-0">
+                    Visite virtuelle
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1" data-aos="fade-right">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg lift lift-lg" id="newsletter-register">
+
+              <!-- Image -->
+              <img src="assets/img/horse-head.jpg" alt="Cheval dans son box" class="card-img-top" height="80%">
+
+              <!-- Shape -->
+              <div class="position-relative">
+                <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <div class="card-body">
+
+                <!-- Form -->
+                <form>
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Name">
+                    <label for="cardName">Nom</label>
+                  </div>
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="Email">
+                    <label for="cardEmail">Email</label>
+                  </div>
+                  <div class="mt-6">
+                    <button class="btn btn-block btn-success lift" type="submit">
+                      Je reste informé
+                    </button>
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="pt-10 pt-md-12">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h2>
+              C'est vous qui le dites.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              Nous avons écouté vos remarques, vos problèmes et avons longuement réfléchi à la meilleur façon d'y répondre. C'est comme cela que nous construisons un projet connecté à la réalité.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class="card card-row shadow-light-lg mb-6">
+              <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+
+                  <!-- Slider -->
+                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
+                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/girl-horse.jpg);" href="index.html#!">
+
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/girl-horse.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/jumping.jpg);" href="index.html#!">
+
+                      <!-- Image (placeholder) -->
+                      <img src="assets/img/jumping.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                    </a>
+                  </div>
+
+                  <!-- Shape -->
+                  <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6 position-md-static">
+
+                  <!-- Slider -->
+                  <div class="position-md-static" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “Trouver une pension pour Stella a été un enfer ! J'ai du visiter au moins 15 écuries différentes, passer 30 coups de fils et je n'ose même pas compter le temps passé sur internet à rechercher des informations et essayer de comparer des sites... Aujourd'hui je suis contente de mes écuries mais malheureusement j'ai du faire beaucoup de concessions, notamment sur la distance.”
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">Sophie, propriétaire de Stella</span>
+                          </footer>
+
+                        </blockquote>
+                      </div>
+
+                    </div>
+                    <div class="w-100">
+
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            “Je déménage dans 1 mois et je n'ai toujours pas trouvé d'écuries pour Rubbens ! En tant que cavalier de compétition, c'est important pour moi de trouver un établissement proposant de bons cours et orienté concours. De plus, Rubbens étant entier il est encore plus difficile de lui trouver une écurie adaptée."
+                          </p>
+
+                          <!-- Footer -->
+                          <footer class="blockquote-footer">
+                            <span class="h6 text-uppercase">David, propriétaire de Rubbens</span>
+                          </footer>
+
+                        </blockquote>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div> <!-- / .row -->
+            </div>
+
+            <!-- Button form-->
+            <div>
+              <p class="text-center font-size-lg text-muted mb-7">
+                Si vous voulez vous aussi contribuer à l'élaboration du projet et nous donner votre avis, répondez à l'enquête !
+              </p>
+            </div>
+            <div class="button-form text-center text-md-left">
+              <a href="https://forms.gle/BzCf9jF4ahmvtbzE9" class="btn btn-primary shadow lift mr-1">
+                Je participe à l'enquête<i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+              </a>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n8">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-gray-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+
+            <!-- Brand -->
+            <img src="assets/img/ATC_logo-removebg-preview.png" alt="logo" class="footer-logo footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2"   style="font-size: 0.7em " >
+              Le rendez-vous des propriétaires.
+            </p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#" class="text-decoration-none">
+                  <img src="assets/img/icons/instagram.png" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#" class="text-decoration-none">
+                  <img src="assets/img/icons/facebook.png" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#" class="text-decoration-none">
+                  <img src="assets/img/icons/twitter.png" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#" class="text-decoration-none">
+                  <img src="assets/img/icons/youtube.png" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+            <div class="col-6 col-md-4 col-lg-2">
+
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-uppercase text-gray-700">
+                Le Projet
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted-variable mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Naissance
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Missions
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Actus
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-uppercase text-gray-700">
+                La plateforme
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted-variable mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="index.html#!" class="text-reset">
+                    Propriétaires d'équidés
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="index.html#!" class="text-reset">
+                    Gérants de structures équestres
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-uppercase text-gray-700">
+                L'agence
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted-variable mb-0">
+                <li class="mb-3">
+                  <a href="index.html#!" class="text-reset">
+                    Communiquer, notre métier
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="index.html#!" class="text-reset">
+                    Rendre la communication accessible
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Un accompagnement 360
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+
+              <!-- Heading -->
+              <h6 class="font-weight-bold text-uppercase text-gray-700">
+                Nous contacter
+              </h6>
+
+              <!-- List -->
+              <ul class="list-unstyled text-muted-variable mb-0">
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Qui sommes nous ?
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#!" class="text-reset">
+                    Restez informés
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-reset">
+                    Formulaire de contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/aos/dist/aos.js"></script>
+    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>
